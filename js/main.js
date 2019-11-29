@@ -3,6 +3,8 @@ for (let i = 0; i < hideContainer.length; i++) {
   hideContainer[i].style.position = "absolute"
   hideContainer[i].style.display = "none";
 }
+let modalWindow = document.querySelector('.modal-window');
+modalWindow.style.display = "none";
 $(document).ready(function () {
   $(".jquery-btn-1").click(function () {
     $(".icon-wrap-1").fadeIn();
@@ -15,5 +17,11 @@ $(document).ready(function () {
   $(".jquery-btn-3").click(function () {
     $(".icon-wrap-3").fadeIn();
     $(".jquery-btn-3").hide();
+  });
+  $(".button-menu").click(function () {
+    $(".modal-window").show()
+  });
+  $(".button-close").click(function () {
+    $(".modal-window").hide()
   });
 });
