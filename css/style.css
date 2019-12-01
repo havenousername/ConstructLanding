@@ -1771,7 +1771,7 @@ a{
     height: 1rem;
   }
   .img-rectagle{
-   width: 300px;
+   display: none;
   }
   .subscribe{
     padding-left: 12%;
@@ -1807,7 +1807,12 @@ a{
   .form-control::placeholder {
     font-size: 0.6rem;
   }
-
+  .modal-window{
+    max-width: 300px;
+  }
+  .image-control > .img-control{
+    display: none;
+  }
 
 }
 
