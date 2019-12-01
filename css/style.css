@@ -1701,9 +1701,113 @@ a{
   .title-white{
     font-size: 2rem;
   }
-  .feedback__text{
-    
+  .m-feedback{
+    flex-direction: column;
   }
+  .feedback{
+    margin-bottom: 4%;
+    width: 85%;
+    height: initial;
+  }
+  .feedback__text{
+    max-width: 100%;
+  }
+  .rectangle-clients{
+    height: 100%;
+    border-bottom-right-radius: 106px;
+  }
+  .clients__banner{
+    margin-bottom: 30px;
+  }
+  .boxes{
+    flex-direction: column;
+    padding: 0 20%;
+  }
+  .box{
+    padding-bottom: 10%;
+    margin-bottom: 15%;
+  }
+  .wrapper-member{
+    flex-direction: column;
+    align-items: center;
+  }
+  .member{
+    margin-bottom: 25%;
+    min-height: 300px;
+  }
+  .member:first-child{
+    margin-top: 5%;
+  }
+  .team__banner{
+    padding-top: 5%;
+  }
+  .wrapper-trial{
+    padding-left: 10%;
+  }
+}
+@media (max-width: 668px){
+  .image-icons-1{
+    display: none;
+  }
+  .image-icons-2,
+  .image-icons-3,
+  .image-icons-4,
+  .image-icons-5{
+    width: 6rem;
+  }
+  .graph-img{
+    display: none;
+  }
+  .triagle_filler{
+    display: none;
+  }
+}
+@media (max-width: 500px){
+  .image-icons-2,
+  .image-icons-3,
+  .image-icons-4,
+  .image-icons-5 {
+    width: 4rem;
+    height: 1rem;
+  }
+  .img-rectagle{
+   width: 300px;
+  }
+  .subscribe{
+    padding-left: 12%;
+    max-width: 500px;
+  }
+  .subscribe__banner{
+    display: inline-block;
+    min-width: 300px;
+  }
+  .subscribe__text{
+    max-width: 63%;
+    display: inline-block;
+  }
+  .form-control{
+    max-width: 65%;
+  }
+  .form__subscribe{
+    left: 45%;
+    font-size: 0.6rem;
+  }
+  .form-control::-webkit-input-placeholder {
+    font-size: 0.6rem;
+  }
+
+  .form-control:-ms-input-placeholder {
+    font-size: 0.6rem;
+  }
+
+  .form-control::-ms-input-placeholder {
+    font-size: 0.6rem;
+  }
+
+  .form-control::placeholder {
+    font-size: 0.6rem;
+  }
+
 
 }
 
