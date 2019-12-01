@@ -750,10 +750,6 @@ a{
      -ms-flex-direction: column;
          flex-direction: column;
 }
-
-.block, .quote, .features{
-  /* outline: 1px solid black; */
-}
 .hidden{
   display: none;
 }
@@ -861,9 +857,6 @@ a{
 .company__name{
   text-align: center;
   grid-column-end: span 2
-}
-.company__graph-before{
-  /* padding-right: 20px; */
 }
 .details__banner, .company-text{
   margin: 0;
@@ -1436,6 +1429,31 @@ a{
     top: 33%;
     right: 4%;
   }
+  .image-icons-2,
+  .image-icons-3,
+  .image-icons-4,
+  .image-icons-5 {
+    width: 7rem;
+    height: 2rem;
+  }
+  .company{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 0.2fr;
+  }
+  .company-text{
+   grid-row-start: 2; 
+   grid-column-end: span 2;
+  }
+  .company__graph,
+  .company__graph-before{
+    width: 100%;
+  }
+  .image-icons-1{
+    width: 4rem;
+    height: 2rem;
+    
+  }
   .circle-play{
     display: none;
   }
@@ -1565,6 +1583,128 @@ a{
     font-size: 0.7rem;
     margin-top: 1rem;
   }
+}
+@media (max-width: 768px){
+  .start-page__company{
+    font-size: 250%;
+    max-width: 350px;
+  }
+  .background-image-one{
+    min-height: 420px;
+  }
+  .grid{
+    grid-template-rows: repeat(8, 0.5fr);
+  }
+  .btn{
+    padding: 1rem 1.2rem;
+    font-size: 0.7rem;
+  }
+  .grid__banner{
+    grid-column-start: 1;
+    grid-column-end: span 4;
+  }
+  .block__banner{
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .block__text{
+    margin-top: 0;
+    font-size: 0.7rem;
+  }
+  .block__button{
+    margin: 0;
+  }
+  .professional{
+    grid-row-start: 2;
+  }
+  .quote{
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+  }
+  .filler-robot{
+    display: none;
+  }
+  .text{
+    font-size: 0.7rem;
+  }
+  .background-image-five{
+        background-size: 48%;
+        background-position-y: 77%;
+        height: 400px;
+        margin-top: 3rem;
+  }
+  .security-list dt {
+    margin-top: 0.6rem;
+  }
+  .security__span{
+    font-size: 1rem;
+  }
+  .security-list{
+    height: 23%;
+  }
+  .subscribe{
+    max-height: 300px;
+  }
+  .form{
+    max-width: 450px;
+  }
+  .background-image-four{
+    min-height: 300px;
+  }
+  .statistics__div{
+    width: 100%;
+    padding-left: 0;
+  }
+  .container-news{
+    flex-basis: 100%;
+  }
+  .video{
+    display: none;
+  }
+  .background-image-seven{
+    padding-bottom: 6%;
+  }
+  .container-news{
+    height: 500px;
+  }
+  .news-icon-1, .news-icon{
+    position: relative;
+    display: block;
+  }
+  .news-icon-1{
+    left: 0;
+  }
+  .news-icon > img{
+    width: 152px;
+  }
+  .rectangle-control{
+    right: 20%;
+    height: 24%;
+    width: 45%;
+  }
+  .background-image-ten{
+    height: 86vw;
+  }
+  .title-black{
+    font-size: 2rem;
+  }
+  .company__name{
+    font-size: 1rem;
+  }
+  .company-text{
+    font-size: 0.7rem;
+  }
+  .company__graph-before{
+    margin-left: 5%;
+  }
+  .title-white{
+    font-size: 2rem;
+  }
+  .feedback__text{
+    
+  }
+
 }
 
 /* triagle */
